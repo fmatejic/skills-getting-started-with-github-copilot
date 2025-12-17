@@ -114,12 +114,31 @@ section {
   letter-spacing: 0.5px;
 }
 
+
 .activity-card .participants-list {
-  list-style-type: disc;
-  margin-left: 22px;
+  list-style-type: none;
+  margin-left: 0;
   margin-bottom: 0;
   color: #333;
   font-size: 15px;
+  padding-left: 0;
+}
+
+.activity-card .participants-list.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.delete-participant {
+  color: #b91c1c;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 1.1em;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #e53935;
 }
 
 .activity-card .participants-list li {
